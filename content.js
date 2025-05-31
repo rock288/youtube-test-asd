@@ -1,5 +1,5 @@
 function handleAds() {
-  // Bỏ qua nút Skip nếu có
+  // skip ads
   const skipButtons = document.querySelectorAll(".ytp-skip-ad-button")
   skipButtons.forEach((btn) => {
     if (btn.style.display !== "none") {
@@ -9,7 +9,7 @@ function handleAds() {
   })
   if (skipButtons.length > 0) {
     setTimeout(() => {
-      // Bỏ qua nút Skip nếu có sau 1 giây
+      // remove skip buttons after 1 second
       skipButtons.forEach((btn) => {
         if (btn.style.display !== "none") {
           btn.click()
@@ -22,11 +22,11 @@ function handleAds() {
     }, 500)
   }
 
-  // Xoá overlay quảng cáo
+  // Remove overlay ads
   const overlays = document.querySelectorAll(".ytp-ad-overlay-container")
   overlays.forEach((el) => el.remove())
 
-  // Tua nhanh video quảng cáo
+  // tua nhanh ads
   const ad = document.querySelector(".ad-showing")
   const video = document.querySelector("video")
   if (video && video.duration && isFinite(video.duration) && ad) {
