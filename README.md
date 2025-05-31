@@ -20,4 +20,4 @@
 
 ## Ghi chú
 
-- Mỗi lần bạn thay đổi mã nguồn, hãy quay lại trang `chrome://extensions/` và nhấn nút ** “Làm mới” (Refresh)** ở extension để áp dụng thay đổi.
+- Mỗi lần bạn thay đổi mã nguồn, hãy quay lại trang `chrome://extensions/` và nhấn nút **“Làm mới” (Refresh)** ở extension để áp dụng thay đổi.
